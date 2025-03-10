@@ -1,13 +1,153 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的 GitHub 网页</title>
+  <meta charset="UTF-8">
+  <title>Dr. Anthony Hernandez</title>
+  <style>
+    /* 将顶部区域设置成大约占整个页面1/5的高度 */
+    /* 下面的百分比只是简单示例，你可以根据需要进行调整 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      flex: 0 0 20%; /* 占用可视区域的20%高度作为顶部 */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      box-sizing: border-box;
+      background-color: #f2f2f2; /* 浅色背景，仅作示例 */
+    }
+    main {
+      flex: 1; /* 中间部分自动填充剩余空间 */
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    footer {
+      flex: 0 0 auto; 
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    /* 简单的表格样式，能看得比较清楚 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #eee;
+    }
+    .material-name {
+      width: 50%;
+    }
+    .material-link {
+      width: 50%;
+    }
+    /* 如果想让表格在中间，可以把它设置为居中 */
+    .material-list {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    /* 按钮简单样式 */
+    .button-link button {
+      cursor: pointer;
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-    <h1>欢迎来到我的网页！</h1>
-    <p>这是我在 GitHub Pages 上托管的第一个 HTML 页面。</p>
+
+  <!-- 顶部区域 -->
+  <header>
+    <div>
+      <strong>Dr. Anthony Hernandez</strong> is an Award-Winning Researcher, 
+      Award-Winning Teaching Faculty, and a Former Postdoctoral Scholar at 
+      the University of Wisconsin-Madison.
+    </div>
+    <img src="selfie.jpg" alt="Dr. Anthony Hernandez" style="max-height: 80%;">
+  </header>
+
+  <!-- 中间内容：Material List -->
+  <main>
+    <h2>Material List</h2>
+    <table class="material-list">
+      <thead>
+        <tr>
+          <th class="material-name">Material Name</th>
+          <th class="material-link">Material Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 以下为10行占位，可自行修改内容或增加/减少行数 -->
+        <tr>
+          <td>Material Name 1</td>
+          <td><a href="#">Link Placeholder 1</a></td>
+        </tr>
+        <tr>
+          <td>Material Name 2</td>
+          <td><a href="#">Link Placeholder 2</a></td>
+        </tr>
+        <tr>
+          <td>Material Name 3</td>
+          <td><a href="#">Link Placeholder 3</a></td>
+        </tr>
+        <tr>
+          <td>Material Name 4</td>
+          <td><a href="#">Link Placeholder 4</a></td>
+        </tr>
+        <tr>
+          <td>Material Name 5</td>
+          <td><a href="#">Link Placeholder 5</a></td>
+        </tr>
+        <tr>
+          <td>Material Name 6</td>
+          <td><a href="#">Link Placeholder 6</a></td>
+        </tr>
+        <tr>
+          <td>Material Name 7</td>
+          <td><a href="#">Link Placeholder 7</a></td>
+        </tr>
+        <tr>
+          <td>Material Name 8</td>
+          <td><a href="#">Link Placeholder 8</a></td>
+        </tr>
+        <tr>
+          <td>Material Name 9</td>
+          <td><a href="#">Link Placeholder 9</a></td>
+        </tr>
+        <tr>
+          <td>Material Name 10</td>
+          <td><a href="#">Link Placeholder 10</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <!-- 底部指引 -->
+  <footer>
+    <p>If you want to participate, please fill in the form</p>
+    <!-- 下面的链接可根据需要修改 -->
+    <a href="https://example.com" class="button-link">
+      <button>Click Me</button>
+    </a>
+  </footer>
+
 </body>
 </html>
 
